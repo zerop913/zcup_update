@@ -1,0 +1,16 @@
+.bg-vector {
+  background-image: url("../assets/hero/Vector-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+@media (max-width: 424.99px) {
+  .bg-vector {
+    top: 70px;
+  }
+}

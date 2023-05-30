@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"
+    />
+    <title>Сборка онлайн</title>
+    <link rel="stylesheet" href="
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-heroGradient">
+    <!-- Hero -->
+    <div class="ui">
+      <div class="ui__background"></div>
+
+      <div class="ui__game"></div>
+
+      <div class="ui__texts">
+        <h1 class="text text--title"></h1>
+        <div class="text text--note">Дважды коснитесь, чтобы начать</div>
+        <div class="text text--timer">0:00</div>
+        <div class="text text--complete">
+          <span>Головоломка собрана!</span>
+        </div>
+        <div class="text text--best-time">
+          <icon trophy></icon>
+          <span>Лучшее время!</span>
+        </div>
+      </div>
+
+      <div class="ui__prefs">
+        <range name="size" title="Размер кубика" list="2,3,4,5"></range>
+        <range
+          name="flip"
+          title="Вращение"
+          list="Быстрое,Плавное,Маятник"
+        ></range>
+        <range name="scramble" title="Длина скрамбла" list="20,25,30"></range>
+        <range
+          name="fov"
+          title="Угол камеры"
+          list="Ортографический,Перспектива"
+        ></range>
+      </div>
+
+      <div class="ui__stats">
+        <div class="stats" name="cube-size"><i>Куб:</i><b>3x3x3</b></div>
+        <div class="stats" name="total-solves"><i>Попыток:</i><b>-</b></div>
+        <div class="stats" name="best-time"><i>Лучшее время:</i><b>-</b></div>
+      </div>
+
+      <div class="ui__buttons">
+        <button class="btn btn--bl btn--stats">
+          <icon trophy></icon>
+        </button>
+        <button class="btn btn--br btn--prefs">
+          <icon settings></icon>
+        </button>
+        <button class="btn btn--bl btn--back">
+          <icon back></icon>
+        </button>
+        <button class="btn btn--br btn--reset">
+          <icon reset></icon>
+        </button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/95/three.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.message {
+  font-family: Raleway;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #562cfc;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  z-index: 999;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.show-message {
+  opacity: 1;
+  transform: translateX(0%);
+}
