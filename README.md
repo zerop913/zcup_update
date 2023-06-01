@@ -1,3 +1,3 @@
 # zcup_update
 
-https://zerocubes.pw [Готовый сайт]
+[Готовый сайт] (https://zerocubes.pw) 
